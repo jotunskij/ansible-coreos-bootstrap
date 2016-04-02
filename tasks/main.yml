@@ -29,3 +29,7 @@
 - name: Install pip launcher
   copy: src=runner dest=~/bin/pip mode=0755
   when: need_pip | failed
+
+- name: Touch .bootstrap
+  raw: touch $HOME/.bootstrapped
+  when: need_bootstrap | failed
