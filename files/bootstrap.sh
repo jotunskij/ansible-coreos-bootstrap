@@ -32,5 +32,3 @@ EOF
 
 chmod +x $HOME/bin/python
 $HOME/bin/python --version
-
-touch $HOME/.bootstrapped
